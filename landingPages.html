@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Links</title>
+    <script>
+        function desmarcarOutraCaixa(caixaAtual, outraCaixa) {
+            if (caixaAtual.checked) {
+                outraCaixa.checked = false;
+            }
+        }
+    </script>
+    <style>
+        .caixa-selecao {
+            display: flex;
+            align-items: center;
+        }
+
+        .caixa-selecao input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Internacionais</h3>
+    <form action="mailto:internacional3@litoralverde.com.br" method="post" enctype="text/plain">
+
+        <!-- Link 1 -->
+        <label for="Vadoo">
+            <a href="https://www.visitmaldivas.com.br/adaaran-prestige-vadoo" target="_blank">Adaaran Prestige Vadoo</a>
+        </label>
+        <div class="caixa-selecao">
+            <input type="checkbox" id="link1_ativo" name="status" value="ativo" onclick="desmarcarOutraCaixa(this, document.getElementById('link1_inativo'))">
+            <label for="link1_ativo">Ativo</label>
+        </div>
+        <div class="caixa-selecao">
+            <input type="checkbox" id="link1_inativo" name="link1_status" value="inativo" onclick="desmarcarOutraCaixa(this, document.getElementById('link1_ativo'))">
+            <label for="link1_inativo">Inativo</label>
+        </div>
+        <label for="link1_obs">Observacoes:</label>
+        <input type="text" id="link1_obs" name="Observacoes" size="50">
+        <br> 
+        <br> 
+      
+        <!-- Adicione mais links conforme necessario -->
+
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+</body>
+</html>
