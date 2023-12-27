@@ -1,9 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Links</title>
+    <script>
+        // Função para abrir todas as URLs em novas abas
+        function abrirTodasAsUrls() {
+            const links = document.querySelectorAll('a'); // Seleciona todos os elementos 'a' (links)
+            links.forEach(function (link) {
+                window.open(link.href, '_blank'); // Abre cada link em uma nova aba
+            });
+        }
+    </script>
     <script>
         // Função para definir status manualmente
         function definirStatusManualmente(idAtivo, idInativo, status) {
@@ -76,60 +86,60 @@
                 - Observações: ${observacoesLink5}
 
                 Bariloche
-                - Status: ${link5Status}
-                - Observações: ${observacoesLink5}
-
-                Be Live Colection Punta Cana
                 - Status: ${link6Status}
                 - Observações: ${observacoesLink6}
 
-                Buenos Aires
+                Be Live Colection Punta Cana
                 - Status: ${link7Status}
                 - Observações: ${observacoesLink7}
+
+                Buenos Aires
+                - Status: ${link8Status}
+                - Observações: ${observacoesLink8}
 
                 Club Med de Neve
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link9Status}
+                - Observações: ${observacoesLink9}
 
                 El Calafate
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link10Status}
+                - Observações: ${observacoesLink10}
 
                 Grand Oasis Cancun
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link11Status}
+                - Observações: ${observacoesLink11}
 
                 Grand Palladium Caribe
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link12Status}
+                - Observações: ${observacoesLink12}
 
                 Hard Rock Caribe
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link13Status}
+                - Observações: ${observacoesLink13}
 
                 Heritance Aarah
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link14Status}
+                - Observações: ${observacoesLink14}
 
                 Hotel Riu Cancun
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link15Status}
+                - Observações: ${observacoesLink15}
 
                 Iberostar Caribe
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link16Status}
+                - Observações: ${observacoesLink16}
 
                 Mendoza
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link17Status}
+                - Observações: ${observacoesLink17}
 
                 Salta
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link18Status}
+                - Observações: ${observacoesLink18}
 
                 Ushuaia
-                - Status: ${link7Status}
-                - Observações: ${observacoesLink7}
+                - Status: ${link19Status}
+                - Observações: ${observacoesLink19}
 
             `;
 
@@ -153,29 +163,29 @@
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 7
             definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 8
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link8_ativo', 'link8_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 9
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link9_ativo', 'link9_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 10
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link10_ativo', 'link10_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 11
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link11_ativo', 'link11_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 12
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Ativo');
+            definirStatusManualmente('link12_ativo', 'link12_inativo', 'Ativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 13
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Ativo');
+            definirStatusManualmente('link13_ativo', 'link13_inativo', 'Ativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 14
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link14_ativo', 'link14_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 15
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link15_ativo', 'link15_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 16
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Ativo');
+            definirStatusManualmente('link16_ativo', 'link16_inativo', 'Ativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 17
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link17_ativo', 'link17_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 18
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link18_ativo', 'link18_inativo', 'Inativo');
             // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 19
-            definirStatusManualmente('link7_ativo', 'link7_inativo', 'Inativo');
+            definirStatusManualmente('link19_ativo', 'link19_inativo', 'Inativo');
         };
     </script>
     <style>
@@ -204,7 +214,7 @@
         <h3>Landing Pages Internacionais</h3>
 
         <!-- Link 1 -->
-        <form>
+        <form >
             <label for="Adaaran Club Rannalhi">
                 <a href="https://www.visitmaldivas.com.br/adaaran-prestige-vadoo" target="_blank">Adaaran Club Rannalhi</a>
             </label>
@@ -303,7 +313,7 @@
                     </div>
                     <div class="caixa-selecao">
                         <input type="checkbox" id="link6_inativo" name="link6_status" readonly disabled>
-                        <label for="link7_inativo">Inativo</label>
+                        <label for="link6_inativo">Inativo</label>
                     </div>
                     <label for="link6_obs">Observações:</label>
                     <input type="text" id="link6_obs" name="Observacoes" size="50"><br><br>
@@ -331,116 +341,116 @@
                 <br>
                 <!-- Link 8-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Buenos Aires">
+                        <a href="https://www.visit-argentina.com.br/buenos-aires" target="_blank">Buenos Aires</a>
                     </label>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_ativo" name="status" readonly disabled>
-                        <label for="link7_ativo">Ativo</label>
+                        <input type="checkbox" id="link8_ativo" name="status" readonly disabled>
+                        <label for="link8_ativo">Ativo</label>
                     </div>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_inativo" name="link7_status" readonly disabled>
-                        <label for="link7_inativo">Inativo</label>
+                        <input type="checkbox" id="link8_inativo" name="link8_status" readonly disabled>
+                        <label for="link8_inativo">Inativo</label>
                     </div>
-                    <label for="link7_obs">Observações:</label>
-                    <input type="text" id="link7_obs" name="Observacoes" size="50"><br><br>
+                    <label for="link8_obs">Observações:</label>
+                    <input type="text" id="link8_obs" name="Observacoes" size="50"><br><br>
 
                 </form>
                 <br>
                 <!-- Link 9-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Club Med de Neve">
+                        <a href="https://www.resortsallinclusive.com.br/club-med-de-neve" target="_blank">Club Med de Neve</a>
                     </label>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_ativo" name="status" readonly disabled>
-                        <label for="link7_ativo">Ativo</label>
+                        <input type="checkbox" id="link9_ativo" name="status" readonly disabled>
+                        <label for="link9_ativo">Ativo</label>
                     </div>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_inativo" name="link7_status" readonly disabled>
-                        <label for="link7_inativo">Inativo</label>
+                        <input type="checkbox" id="link9_inativo" name="link9_status" readonly disabled>
+                        <label for="link9_inativo">Inativo</label>
                     </div>
-                    <label for="link7_obs">Observações:</label>
-                    <input type="text" id="link7_obs" name="Observacoes" size="50"><br><br>
+                    <label for="link9_obs">Observações:</label>
+                    <input type="text" id="link9_obs" name="Observacoes" size="50"><br><br>
 
                 </form>
                 <br>
                 <!-- Link 10-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="El Calafate">
+                        <a href="https://www.visit-argentina.com.br/el-calafate" target="_blank">El Calafate</a>
                     </label>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_ativo" name="status" readonly disabled>
-                        <label for="link7_ativo">Ativo</label>
+                        <input type="checkbox" id="link10_ativo" name="status" readonly disabled>
+                        <label for="link10_ativo">Ativo</label>
                     </div>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_inativo" name="link7_status" readonly disabled>
-                        <label for="link7_inativo">Inativo</label>
+                        <input type="checkbox" id="link10_inativo" name="link10_status" readonly disabled>
+                        <label for="link10_inativo">Inativo</label>
                     </div>
-                    <label for="link7_obs">Observações:</label>
-                    <input type="text" id="link7_obs" name="Observacoes" size="50"><br><br>
+                    <label for="link10_obs">Observações:</label>
+                    <input type="text" id="link10_obs" name="Observacoes" size="50"><br><br>
 
                 </form>
                 <br>
                 <!-- Link 11-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Grand Oasis Cancun">
+                        <a href="https://www.resortsallinclusive.com.br/grand-oasis-cancun" target="_blank">Grand Oasis Cancun</a>
                     </label>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_ativo" name="status" readonly disabled>
-                        <label for="link7_ativo">Ativo</label>
+                        <input type="checkbox" id="link11_ativo" name="status" readonly disabled>
+                        <label for="link11_ativo">Ativo</label>
                     </div>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_inativo" name="link7_status" readonly disabled>
-                        <label for="link7_inativo">Inativo</label>
+                        <input type="checkbox" id="link11_inativo" name="link11_status" readonly disabled>
+                        <label for="link11_inativo">Inativo</label>
                     </div>
-                    <label for="link7_obs">Observações:</label>
-                    <input type="text" id="link7_obs" name="Observacoes" size="50"><br><br>
+                    <label for="link11_obs">Observações:</label>
+                    <input type="text" id="link11_obs" name="Observacoes" size="50"><br><br>
 
                 </form>
                 <br>
                 <!-- Link 12-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Grand Palladium Caribe">
+                        <a href="https://www.resortsallinclusive.com.br/grand-palladium-caribe" target="_blank">Grand Palladium Caribe</a>
                     </label>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_ativo" name="status" readonly disabled>
-                        <label for="link7_ativo">Ativo</label>
+                        <input type="checkbox" id="link12_ativo" name="status" readonly disabled>
+                        <label for="link12_ativo">Ativo</label>
                     </div>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_inativo" name="link7_status" readonly disabled>
-                        <label for="link7_inativo">Inativo</label>
+                        <input type="checkbox" id="link12_inativo" name="link12_status" readonly disabled>
+                        <label for="link12_inativo">Inativo</label>
                     </div>
-                    <label for="link7_obs">Observações:</label>
-                    <input type="text" id="link7_obs" name="Observacoes" size="50"><br><br>
+                    <label for="link12_obs">Observações:</label>
+                    <input type="text" id="link12_obs" name="Observacoes" size="50"><br><br>
 
                 </form>
                 <br>
                 <!-- Link 13-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Hard Rock Caribe">
+                        <a href="https://www.resortsallinclusive.com.br/hard-rock-caribe" target="_blank">Hard Rock Caribe</a>
                     </label>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_ativo" name="status" readonly disabled>
-                        <label for="link7_ativo">Ativo</label>
+                        <input type="checkbox" id="link13_ativo" name="status" readonly disabled>
+                        <label for="link13_ativo">Ativo</label>
                     </div>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_inativo" name="link7_status" readonly disabled>
-                        <label for="link7_inativo">Inativo</label>
+                        <input type="checkbox" id="link13_inativo" name="link13_status" readonly disabled>
+                        <label for="link13_inativo">Inativo</label>
                     </div>
-                    <label for="link7_obs">Observações:</label>
-                    <input type="text" id="link7_obs" name="Observacoes" size="50"><br><br>
+                    <label for="link13_obs">Observações:</label>
+                    <input type="text" id="link13_obs" name="Observacoes" size="50"><br><br>
 
                 </form>
                 <br>
                 <!-- Link 14-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Heritance Aarah">
+                        <a href="https://www.visitmaldivas.com.br/heritance-aarah" target="_blank">Heritance Aarah</a>
                     </label>
                     <div class="caixa-selecao">
                         <input type="checkbox" id="link14_ativo" name="status" readonly disabled>
@@ -457,15 +467,15 @@
                 <br>
                 <!-- Link 15-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Hotel Riu Cancun">
+                        <a href="https://www.resortsallinclusive.com.br/hotel-riu-cancun" target="_blank">Hotel Riu Cancun</a>
                     </label>
                     <div class="caixa-selecao">
                         <input type="checkbox" id="link15_ativo" name="status" readonly disabled>
                         <label for="link15_ativo">Ativo</label>
                     </div>
                     <div class="caixa-selecao">
-                        <input type="checkbox" id="link7_inativo" name="link7_status" readonly disabled>
+                        <input type="checkbox" id="link15_inativo" name="link15_status" readonly disabled>
                         <label for="link15_inativo">Inativo</label>
                     </div>
                     <label for="link15_obs">Observações:</label>
@@ -475,8 +485,8 @@
                 <br>
                 <!-- Link 16-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Iberostar Caribe">
+                        <a href="https://www.resortsallinclusive.com.br/iberostar-caribe" target="_blank">Iberostar Caribe</a>
                     </label>
                     <div class="caixa-selecao">
                         <input type="checkbox" id="link16_ativo" name="status" readonly disabled>
@@ -493,8 +503,8 @@
                 <br>
                 <!-- Link 17-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Mendoza">
+                        <a href="https://www.visit-argentina.com.br/mendoza" target="_blank">Mendoza</a>
                     </label>
                     <div class="caixa-selecao">
                         <input type="checkbox" id="link17_ativo" name="status" readonly disabled>
@@ -511,8 +521,8 @@
                 <br>
                 <!-- Link 18-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Salta">
+                        <a href="https://www.visit-argentina.com.br/salta" target="_blank">Salta</a>
                     </label>
                     <div class="caixa-selecao">
                         <input type="checkbox" id="link18_ativo" name="status" readonly disabled>
@@ -529,8 +539,8 @@
                 <br>
                 <!-- Link 19-->
                 <form>
-                    <label for="Be Live Colection Punta Cana">
-                        <a href="https://www.resortsallinclusive.com.br/be-live-collection-punta-cana" target="_blank">Be Live Colection Punta Cana</a>
+                    <label for="Ushuaia">
+                        <a href="https://www.visit-argentina.com.br/ushuaia" target="_blank">Ushuaia</a>
                     </label>
                     <div class="caixa-selecao">
                         <input type="checkbox" id="link19_ativo" name="status" readonly disabled>
@@ -540,19 +550,23 @@
                         <input type="checkbox" id="link19_inativo" name="link19_status" readonly disabled>
                         <label for="link19_inativo">Inativo</label>
                     </div>
-                    <label for="link7_obs">Observações:</label>
+                    <label for="link19_obs">Observações:</label>
                     <input type="text" id="link19_obs" name="Observacoes" size="50"><br><br>
 
                 </form>
                 <br>
               
                 
+        <!-- Botões -->
         <section>
-                <!-- Botão Enviar E-mail -->
-                <button type="button" onclick="enviarEmail()">Enviar E-mail</button>
-                <button> <a href="https://reservas.litoralverde.com.br/infotravel/login.xhtml" target="_blank">Insira o Banner</button></a>
-
+            <!-- Botão Enviar E-mail -->
+            <button type="button" onclick="enviarEmail()">Enviar E-mail</button>
+            <!-- Botão Abrir Todas as URLs -->
+            <button type="button" onclick="abrirTodasAsUrls()">Abrir Todas as URLs</button>
+            <button><a href="https://reservas.litoralverde.com.br/infotravel/login.xhtml" target="_blank">Insira o Banner</a></button>
+        </section>
             </section>
+            
         </body>
         </html>
         
