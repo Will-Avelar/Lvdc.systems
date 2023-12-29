@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Links</title>
+    <script>
+        // Função para abrir todas as URLs em novas abas
+        function abrirTodasAsUrls() {
+            const links = document.querySelectorAll('a'); // Seleciona todos os elementos 'a' (links)
+            
+            // Itera sobre os links e simula o clique para abrir em novas abas
+            links.forEach(function (link) {
+                var newTab = window.open(link.href, '_blank');
+                if (!newTab || newTab.closed || typeof newTab.closed == 'undefined') {
+                    // Se a abertura da nova aba for bloqueada, usa a navegação direta do navegador
+                    window.location.href = link.href;
+                }
+            });
+        }
+
+        // Função para enviar e-mail para o setor apropriado
+        function enviarEmail(setor) {
+            let email = '';
+            let assunto = 'Assunto do e-mail';
+            let corpo = 'Corpo do e-mail';
+
+            switch (setor) {
+                case 'mkt':
+                    email = 'mailto:marketing@example.com?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+                    break;
+                /*case 'operacoes':
+                    email = 'mailto:comercial@example.com?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+                    break;
+                case 'internacional':
+                    email = 'mailto:internacional@example.com?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+                    break;*/
+                default:
+                    break;
+            }
+
+            if (email) {
+                window.open(email);
+            }
+        }
+
+        // Função para definir status manualmente
+        function definirStatusManualmente(idAtivo, idInativo, status) {
+            document.getElementById(idAtivo).checked = (status.toLowerCase() === 'ativo');
+            document.getElementById(idInativo).checked = (status.toLowerCase() === 'inativo');
+        }
+
+        // Executar a definição de status assim que a página carregar
+        window.onload = function() {
+            // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 1
+            definirStatusManualmente('link1_ativo', 'link1_inativo', 'Inativo');
+            // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 2
+            definirStatusManualmente('link2_ativo', 'link2_inativo', 'Inativo');
+            // Definir manualmente 'ativo' ou 'inativo' conforme necessário para o Link 3
+            definirStatusManualmente('link3_ativo', 'link3_inativo', 'Inativo');
+        };
+    </script>
+    <style>
+        body {
+            text-align: center;
+        }
+       
+        .caixa-selecao {
+            display: flex;
+            align-items: center;
+            margin: 0 0 0 40%;
+        }
+
+        .caixa-selecao input {
+            margin-right: 5px;
+        }
+
+        input[readonly] {
+            background-color: #f0f0f0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Landing Pages Internacionais</h3>
+
+        <!-- Link 1 -->
+        <form class="mkt" onsubmit="return false;">
+            <label for="Adaaran Club Rannalhi">
+                <a href="https://www.visitmaldivas.com.br/adaaran-prestige-vadoo" target="_blank">Adaaran Club Rannalhi</a>
+            </label>
+            <div class="caixa-selecao">
+                <input type="checkbox" id="link1_ativo" name="status" readonly disabled>
+                <label for="link1_ativo">Ativo</label>
+            </div>
+            <div class="caixa-selecao">
+                <input type="checkbox" id="link1_inativo" name="link1_status" readonly disabled>
+                <label for="link1_inativo">Inativo</label>
+            </div>
+            <label for="link1_obs">Observações:</label>
+            <input type="text" id="link1_obs" name="Observacoes" size="50"><br><br>
+        </form>
+        <br>
+
+        <!-- Link 2 -->
+        <form class="operacoes" onsubmit="return false;">
+            <label for="Adaaran Hudhuranfushi">
+                <a href="https://www.visitmaldivas.com.br/adaaran-prestige-vadoo" target="_blank">Adaaran Hudhuranfushi</a>
+            </label>
+            <div class="caixa-selecao">
+                <input type="checkbox" id="link2_ativo" name="status" readonly disabled>
+                <label for="link2_ativo">Ativo</label>
+            </div>
+            <div class="caixa-selecao">
+                <input type="checkbox" id="link2_inativo" name="link2_status" readonly disabled>
+                <label for="link2_inativo">Inativo</label>
+            </div>
+            <label for="link2_obs">Observações:</label>
+            <input type="text" id="link2_obs" name="Observacoes" size="50"><br><br>
+        </form>
+        <br>
+
+        <!-- Link 3 -->
+        <form class="internacional" onsubmit="return false;">
+            <label for="Adaaran Prestige Vadoo">
+                <a href="https://www.visitmaldivas.com.br/adaaran-prestige-vadoo" target="_blank">Adaaran Prestige Vadoo</a>
+            </label>
+            <div class="caixa-selecao">
+                <input type="checkbox" id="link3_ativo" name="status" readonly disabled>
+                <label for="link3_ativo">Ativo</label>
+            </div>
+            <div class="caixa-selecao">
+                <input type="checkbox" id="link3_inativo" name="link3_status" readonly disabled>
+                <label for="link3_inativo">Inativo</label>
+            </div>
+            <label for="link3_obs">Observações:</label>
+            <input type="text" id="link3_obs" name="Observacoes" size="50"><br><br>
+        </form>
+        <br>
+
+                       <!-- Link 4 -->
+       <form>
+        <label for="Adaaran Select Meedhupparu">
+            <a href="https://www.visitmaldivas.com.br/adaaran-prestige-vadoo" target="_blank">Adaaran Select Meedhupparu</a>
+        </label>
+        <div class="caixa-selecao">
+            <input type="checkbox" id="link4_ativo" name="status" readonly disabled>
+            <label for="link4_ativo">Ativo</label>
+        </div>
+        <div class="caixa-selecao">
+            <input type="checkbox" id="link4_inativo" name="link4_status" readonly disabled>
+            <label for="link4_inativo">Inativo</label>
+        </div>
+        <label for="link4_obs">Observações:</label>
+        <input type="text" id="link4_obs" name="Observacoes" size="50"><br><br>
+
+    </form>
+    <br>
+      
+        <!-- Botões -->
+        <section>
+            <!-- Botão Abrir Todas as URLs -->
+            <button type="button" onclick="abrirTodasAsUrls()">Abrir Todas as URLs</
+
+                    <!-- Botões de Envio de E-mail -->
+                    <button onclick="enviarEmail('mkt')">Enviar E-mail</button>
+                  
+                </section>
+        </body>
+        </html>
+
+        
